@@ -1,9 +1,11 @@
-import LeftContainer from './components/left/LeftContainer';
+import LeftContainer from './components/LeftContainer';
+import RightContainer from './components/RightContainer';
 
 function App() {
   return (
     <div className="App">
       <LeftContainer />
+      <RightContainer />
     </div>
   );
 }
