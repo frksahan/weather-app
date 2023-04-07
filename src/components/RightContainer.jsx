@@ -11,17 +11,27 @@ import Background from "../assets/background.jpg"
 const BigImg = styled.img`
 width: 100px;
 height: 100px;
+&:hover {
+transition: all 1s;
+transform: rotate(360deg);
+}
 `;
 
 const SmallImg = styled.img`
-width: 55px;
+width: 90px;
+padding: 10px;
+&:hover {
+transition: all 1s;
+transform: rotate(360deg);
+}
 `;
 
 const Wrapper = styled.div`
 display: flex;
 flex-direction: column;
+justify-content: center;
 align-items: center;
-background-image: url(${Background});
+background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(125, 144, 252, 0.5)), url(${Background});
 background-repeat: no-repeat;
 width: 100%;
 height: 100vh;
@@ -32,7 +42,7 @@ const FirstContain = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-padding-top: 3em;        
+margin-bottom: 40px;
 `;
 
 const FiveDays = styled.div`
@@ -41,16 +51,35 @@ align-items: center;
 justify-content: center;
 flex-wrap: wrap;
 width: 70%;
+cursor: pointer;
 `;
 
 const Container = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-margin: 0.5em;
-padding: 1em;
+padding: 10px 30px;
 margin-bottom: 2.5em;
 border-right: 3px solid black;
+&:nth-child(4) {
+    border: none;
+  }
+&:last-child {
+    border: none;
+  }
+&:hover {
+  background-color: rgba(255, 255, 255, 0.37);
+  transition: all 0.25s;
+  cursor: pointer;
+}
+`;
+
+const P = styled.p`
+margin: 10px 0px;
+`;
+
+const H1 = styled.h1`
+margin: 20px 0px;
 `;
 
 
@@ -58,46 +87,46 @@ function RightContainer() {
     return (
         <Wrapper>
             <FirstContain>
-                <h1>Gölbaşı, Ankara</h1>
+                <H1>Gölbaşı, Ankara</H1>
                 <BigImg src={Sun} alt="" />
-                <p>6°</p>
-                <p>Mostly Cloudy</p>
+                <P>6°</P>
+                <h2>Mostly Cloudy</h2>
             </FirstContain>
             <FiveDays>
                 <Container>
-                    <p>Mon</p>
+                    <P>Mon</P>
                     <SmallImg src={Storm} alt="" />
-                    <p>22/16</p>
+                    <P>22/16</P>
                 </Container>
                 <Container>
-                    <p>Tue</p>
+                    <P>Tue</P>
                     <SmallImg src={Hail} alt="" />
-                    <p>22/16</p>
+                    <P>22/16</P>
                 </Container>
                 <Container>
-                    <p>Wed</p>
+                    <P>Wed</P>
                     <SmallImg src={Sun} alt="" />
-                    <p>22/16</p>
+                    <P>22/16</P>
                 </Container>
                 <Container>
-                    <p>Thur</p>
+                    <P>Thur</P>
                     <SmallImg src={Cloud} alt="" />
-                    <p>22/16</p>
+                    <P>22/16</P>
                 </Container>
                 <Container>
-                    <p>Fri</p>
+                    <P>Fri</P>
                     <SmallImg src={Sun} alt="" />
-                    <p>22/16</p>
+                    <P>22/16</P>
                 </Container>
                 <Container>
-                    <p>Sat</p>
+                    <P>Sat</P>
                     <SmallImg src={Cloud} alt="" />
-                    <p>22/16</p>
+                    <P>22/16</P>
                 </Container>
                 <Container>
-                    <p>Sun</p>
+                    <P>Sun</P>
                     <SmallImg src={Snowflake} alt="" />
-                    <p>22/16</p>
+                    <P>22/16</P>
                 </Container>
             </FiveDays>
         </Wrapper>
