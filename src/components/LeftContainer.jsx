@@ -10,6 +10,10 @@ align-items: center;
 width: 100%;
 height: 100vh;
 border-right: 3px solid black;
+&:hover {
+  width: 120%;
+  transition: all 1.5s;
+}
 `;
 
 const Container = styled.div`
@@ -27,21 +31,14 @@ width: 100px;
 height: 100px;
 `;
 
-const Button = styled.button`
-  color: white;
-  background-color: black;
-  border: 2px black solid;
-  font-size: 16px;
-  margin: 10px;
-  height: 40px;
-  border-radius: 20px;
-  width: 50%;
-  cursor: pointer;
-  font-weight: 600;
-  &:hover {
-    background-color: white;
-    color: black;
-  }
+const Title = styled.p`
+font-size: 40px;
+`;
+
+const P = styled.p`
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 `;
 
 const Input = styled.input`
@@ -58,25 +55,36 @@ const Input = styled.input`
   text-transform: capitalize;
   &:hover {
     border: 2px solid  red;
+    transition: all 0.25s;
   }
   padding-left: 15px;
 `;
 
-const P = styled.p`
-  font-size: 1.5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+const Button = styled.button`
+  color: white;
+  background-color: black;
+  border: 2px black solid;
+  font-size: 16px;
+  margin: 10px;
+  height: 40px;
+  border-radius: 20px;
+  width: 50%;
+  cursor: pointer;
+  font-weight: 600;
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+    transition: all 0.25s;
+  }
 `;
 
 const A = styled.a`
   margin-top: 20em;
   text-decoration: none;
+  color: red;
+  font-size: 16px;
 `;
-
-const Title = styled.p`
-font-size: 40px;
-`;
-
 
 function LeftContainer() {
   return (

@@ -7,25 +7,6 @@ import Cloud from "../assets/cloud.png"
 import Snowflake from "../assets/snowflake.png"
 import Background from "../assets/background.jpg"
 
-
-const BigImg = styled.img`
-width: 100px;
-height: 100px;
-&:hover {
-transition: all 1s;
-transform: rotate(360deg);
-}
-`;
-
-const SmallImg = styled.img`
-width: 90px;
-padding: 10px;
-&:hover {
-transition: all 1s;
-transform: rotate(360deg);
-}
-`;
-
 const Wrapper = styled.div`
 display: flex;
 flex-direction: column;
@@ -36,13 +17,34 @@ background-repeat: no-repeat;
 width: 100%;
 height: 100vh;
 background-size: cover;
+&:hover {
+  width: 120%;
+  transition: all 1.5s;
+}
 `;
 
-const FirstContain = styled.div`
+const FirstContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
 margin-bottom: 40px;
+`;
+
+const H1 = styled.h1`
+margin: 20px 0px;
+`;
+
+const BigImg = styled.img`
+width: 100px;
+height: 100px;
+&:hover {
+transition: all 1s;
+transform: rotate(360deg);
+}
+`;
+
+const P = styled.p`
+margin: 10px 0px;
 `;
 
 const FiveDays = styled.div`
@@ -50,8 +52,17 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-wrap: wrap;
-width: 70%;
+width: 73%;
 cursor: pointer;
+`;
+
+const SmallImg = styled.img`
+width: 90px;
+padding: 10px;
+&:hover {
+transition: all 1s;
+transform: rotate(360deg);
+}
 `;
 
 const Container = styled.div`
@@ -74,24 +85,15 @@ border-right: 3px solid black;
 }
 `;
 
-const P = styled.p`
-margin: 10px 0px;
-`;
-
-const H1 = styled.h1`
-margin: 20px 0px;
-`;
-
-
 function RightContainer() {
     return (
         <Wrapper>
-            <FirstContain>
+            <FirstContainer>
                 <H1>Gölbaşı, Ankara</H1>
                 <BigImg src={Sun} alt="" />
                 <P>6°</P>
                 <h2>Mostly Cloudy</h2>
-            </FirstContain>
+            </FirstContainer>
             <FiveDays>
                 <Container>
                     <P>Mon</P>
