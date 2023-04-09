@@ -9,7 +9,7 @@ justify-content: center;
 align-items: center;
 width: 100%;
 height: 100vh;
-border-right: 3px solid black;
+border-right: 5px solid black;
 &:hover {
   width: 120%;
   transition: all 1.5s;
