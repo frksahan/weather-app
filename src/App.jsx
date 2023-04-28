@@ -9,7 +9,7 @@ box-sizing: border-box;
 height: 100%;
 width: 100%;
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
 display: flex;
 flex-direction: column;
 box-sizing: border-box;
