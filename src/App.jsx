@@ -15,8 +15,7 @@ flex-direction: column;
 box-sizing: border-box;
 height: 100%;
 width: 100%;
-  }
-`;
+}`;
 
 function App() {
   return (
