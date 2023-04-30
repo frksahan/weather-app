@@ -87,7 +87,7 @@ const A = styled.a`
 `;
 
 function LeftContainer() {
-  return (
+  return(
     <Wrapper>
       <Container>
         <Img src={Logo} />
