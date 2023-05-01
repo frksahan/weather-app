@@ -53,11 +53,11 @@ const Input = styled.input`
   width: 50%;
   font-weight: 600;
   text-transform: capitalize;
+  padding-left: 15px;
   &:hover {
     border: 2px solid  red;
     transition: all 0.25s;
   }
-  padding-left: 15px;
 `;
 
 const Button = styled.button`
