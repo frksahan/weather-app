@@ -75,9 +75,11 @@ border-right: 3px solid black;
 &:nth-child(4) {
     border: none;
 }
+
 &:last-child {
     border: none;
 }
+
 &:hover {
   background-color: rgba(255, 255, 255, 0.37);
   transition: all 0.25s;
