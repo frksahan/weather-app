@@ -38,6 +38,7 @@ margin: 20px 0px;
 const BigImg = styled.img`
 width: 100px;
 height: 100px;
+
 &:hover 
 {
 transition: all 1s;
