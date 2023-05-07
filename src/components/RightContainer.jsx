@@ -62,6 +62,7 @@ cursor: pointer;
 const SmallImg = styled.img`
 width: 90px;
 padding: 10px;
+
 &:hover {
 transition: all 1s;
 transform: rotate(360deg);
