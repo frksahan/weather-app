@@ -17,7 +17,6 @@ background-repeat: no-repeat;
 width: 100%;
 height: 100vh;
 background-size: cover;
-
 &:hover {
   width: 110%;
   transition: all 1.5s;
